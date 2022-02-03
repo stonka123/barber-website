@@ -44,12 +44,20 @@ body {
 	height: 100vh;
 }
 .hamburger {
-	position: absolute;
+	position: fixed;
 	left: 15px;
 	top: 15px;
 	z-index: 1000;
 }
-
+.nav__bar {
+	position: relative;
+}
+.nav__bar-logo {
+	position: fixed;
+	width: 20px;
+	top: 20px;
+	right: 20px;
+}
 .nav {
 	position: fixed;
 	display: flex;
@@ -64,7 +72,7 @@ body {
 	background: rgb(0, 0, 0);
 	background: linear-gradient(186deg, rgba(0, 0, 0, 1) 0%, rgba(50, 50, 50, 1) 35%, rgba(22, 22, 22, 1) 100%);
 	transition: transform 0.3s;
-	// overflow: hidden;
+	overflow: hidden;
 	z-index: 999;
 	&__logo {
 		position: absolute;
@@ -78,11 +86,28 @@ body {
 		justify-content: center;
 	}
 	&__item {
-		margin-top: 1em;
-		padding: 1em;
+		position: relative;
+		margin-top: 1.5em;
+		padding: 0.6em;
+		font-size: 1.8rem;
 		color: $main-color;
 		text-decoration: none;
 		text-transform: uppercase;
+		&::before {
+			position: absolute;
+			display: block;
+			top: 0;
+			left: 0;
+			width: 2px;
+			height: 100%;
+			transform: scaleY(0);
+			background-color: $pure-white;
+			transition: transform 0.3s;
+			content: '';
+		}
+		&:hover::before {
+			transform: scaleY(1);
+		}
 	}
 	&__mobile--active {
 		transform: translateX(0%);
@@ -93,18 +118,19 @@ body {
 	position: absolute;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	align-items: center;
 	text-align: center;
 	height: 100vh;
 	width: 100vw;
 	z-index: 3;
-	top: 200px;
+	// top: 200px;
 	&__img {
-		display: inline-block;
 		width: 30px;
 		rotate: (90deg);
 	}
 	&__title {
+		margin: 0.5em;
 		font-family: 'Cormorant Garamond', serif;
 		text-align: center;
 		font-size: 7rem;
@@ -114,13 +140,38 @@ body {
 	&__text {
 		text-align: center;
 		font-size: 3rem;
+		color: $pure-white;
 		font-style: italic;
-		color: $secondary-color;
+		opacity: 0.6;
+	}
+	&__cpt {
+		margin-top: 2em;
+		padding: 0.5em 1.5em;
+		font-size: 1.4rem;
+		width: 170px;
+		height: 35px;
+		color: $pure-white;
+		border: none;
+		text-decoration: none;
+		background-color: $secondary-color;
+		border-radius: 8px;
+		text-transform: uppercase;
+		cursor: pointer;
 	}
 }
 // section test
 .test {
 	background-color: #333;
-	height: 100vh;
-	width: 100vw;
+	height: 200vh;
+}
+
+// media quereis
+@media (min-width: 576px) {
+}
+@media (min-width: 768px) {
+	.hero-img {
+		background-image: url(../img/header_big.jpg);
+	}
+}
+@media (min-width: 9926px) {
 }

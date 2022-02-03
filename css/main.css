@@ -46,10 +46,21 @@ body {
 }
 
 .hamburger {
-  position: absolute;
+  position: fixed;
   left: 15px;
   top: 15px;
   z-index: 1000;
+}
+
+.nav__bar {
+  position: relative;
+}
+
+.nav__bar-logo {
+  position: fixed;
+  width: 20px;
+  top: 20px;
+  right: 20px;
 }
 
 .nav {
@@ -79,6 +90,7 @@ body {
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
+  overflow: hidden;
   z-index: 999;
 }
 
@@ -105,11 +117,35 @@ body {
 }
 
 .nav__item {
-  margin-top: 1em;
-  padding: 1em;
+  position: relative;
+  margin-top: 1.5em;
+  padding: 0.6em;
+  font-size: 1.8rem;
   color: #aa2e2e;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.nav__item::before {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  background-color: #fff;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  content: '';
+}
+
+.nav__item:hover::before {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
 }
 
 .nav__mobile--active {
@@ -126,6 +162,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -133,16 +172,15 @@ body {
   height: 100vh;
   width: 100vw;
   z-index: 3;
-  top: 200px;
 }
 
 .container__img {
-  display: inline-block;
   width: 30px;
   rotate: 90deg;
 }
 
 .container__title {
+  margin: 0.5em;
   font-family: 'Cormorant Garamond', serif;
   text-align: center;
   font-size: 7rem;
@@ -153,13 +191,34 @@ body {
 .container__text {
   text-align: center;
   font-size: 3rem;
+  color: #fff;
   font-style: italic;
-  color: #850b0b;
+  opacity: 0.6;
+}
+
+.container__cpt {
+  margin-top: 2em;
+  padding: 0.5em 1.5em;
+  font-size: 1.4rem;
+  width: 170px;
+  height: 35px;
+  color: #fff;
+  border: none;
+  text-decoration: none;
+  background-color: #850b0b;
+  border-radius: 8px;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 .test {
   background-color: #333;
-  height: 100vh;
-  width: 100vw;
+  height: 200vh;
+}
+
+@media (min-width: 768px) {
+  .hero-img {
+    background-image: url(../img/header_big.jpg);
+  }
 }
 /*# sourceMappingURL=main.css.map */
