@@ -1,0 +1,18 @@
+.section__heading {
+	margin: 0.5em auto;
+	position: relative;
+	font-size: 2.7rem;
+	font-weight: 300;
+
+	color: $main-color;
+	letter-spacing: 1px;
+}
+.section__heading::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -10px;
+	width: 1px;
+	height: 100%;
+	background-color: $main-color;
+}
