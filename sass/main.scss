@@ -110,6 +110,10 @@ body {
 	}
 	&__bar {
 		position: relative;
+		width: 100vw;
+		height: 13vh;
+		// background-color: pink;
+
 		&-logo {
 			position: fixed;
 			width: 20px;
@@ -172,6 +176,10 @@ body {
 		}
 	}
 }
+.bars {
+	position: fixed;
+	background-color: pink;
+}
 
 // section
 .main {
@@ -189,6 +197,7 @@ body {
 	justify-content: center;
 	min-height: 50vh;
 	width: 100vw;
+	line-height: 1.5;
 }
 .aboutus__text {
 	margin: 1em;
@@ -223,6 +232,10 @@ body {
 	justify-content: flex-start;
 }
 
+.test {
+	background-color: #eee;
+	height: 200vh;
+}
 // media quereis
 @media (min-width: 576px) {
 	.container {
