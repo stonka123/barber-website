@@ -195,7 +195,7 @@ body {
 	width: 100vw;
 }
 .aboutus {
-	width: 70%;
+	width: 40vw;
 	&__title {
 		text-align: center;
 	}
@@ -208,11 +208,13 @@ body {
 .open {
 	margin: 3em 0.5em;
 	background-color: $secondary-color;
+	padding: 1em;
 
 	&__title {
 		color: rgb(170, 170, 170);
 		text-align: center;
 		font-size: 1.6rem;
+		background-color: $secondary-color;
 	}
 	&__text {
 		text-align: center;
@@ -228,6 +230,10 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background-color: $main-color;
+	margin: 2em;
 	&__box {
 		display: flex;
 		align-items: center;
@@ -241,24 +247,27 @@ body {
 	position: relative;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-around;
 	flex-direction: column;
-	width: 250px;
+	width: 270px;
 	height: 400px;
-	border: 1px solid $main-color;
-	&__title {
-		height: 10vh;
-		position: absolute;
-		top: 15px;
+	background-color: $pure-white;
+	border: none;
+	border-radius: 10px;
+	margin: 1em 0.5em;
 
-		font-size: 2.3rem;
+	&__title {
+		top: 15px;
+		font-size: 2.1rem;
+		height: 10%;
 	}
 	&__img {
-		width: 80%;
-		border-radius: 10px;
+		max-width: 80%;
+		border-radius: 12px;
 		border: none;
 	}
 	&__info__box {
+		position: relative;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -267,7 +276,17 @@ body {
 		margin: 0.5em;
 		&__img {
 			width: 20px;
-			margin-right: 0.2em;
+			margin-right: 0.5em;
+			margin-top: 1em;
+		}
+		&__text {
+			font-size: 1.6rem;
+		}
+		&__cost {
+			align-self: flex-end;
+			font-size: 2rem;
+			color: $secondary-color;
+			margin-right: 10px;
 		}
 	}
 }
