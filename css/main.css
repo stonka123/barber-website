@@ -320,7 +320,6 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background-color: #aa2e2e;
-  margin: 2em;
 }
 
 .price__box {
@@ -340,7 +339,8 @@ body {
 }
 
 .card {
-  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -362,13 +362,15 @@ body {
 }
 
 .card__title {
+  margin: 0.5em auto;
   top: 15px;
   font-size: 2.1rem;
   height: 10%;
 }
 
 .card__img {
-  max-width: 80%;
+  margin: 0 auto;
+  max-width: 70%;
   border-radius: 12px;
   border: none;
 }
@@ -408,6 +410,88 @@ body {
   font-size: 2rem;
   color: #850b0b;
   margin-right: 10px;
+}
+
+.visit {
+  margin-top: 4em;
+}
+
+.visit__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 30vh;
+  margin: 6em;
+}
+
+.visit__box--label {
+  color: #850b0b;
+  font-size: 3rem;
+  margin: 1em;
+}
+
+.visit__box--input {
+  border: 1px solid #aa2e2e;
+  padding: 1em;
+  font-size: 2rem;
+  margin: 1em;
+}
+
+.contact__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: #aa2e2e;
+  width: 100vw;
+  height: 100px;
+}
+
+.contact__box--social {
+  font-size: 4rem;
+  color: #fff;
+}
+
+.adress__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100wv;
+}
+
+.adress {
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin-top: 1em;
 }
 
 @media (min-width: 576px) {

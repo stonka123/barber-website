@@ -74,7 +74,7 @@
             </h2>
         </section>
         <h2 class="price__title section__heading">Cennik</h2>
-        <section class="price">
+        <section class="price wrapper">
             <div class="card">
                 <p class="card__title">Strzyżenie klasyczne</p>
                 <img src="./img/card.jpg" alt="" class="card__img">
@@ -170,9 +170,36 @@
                 </div>
                 <p class="card__info__box__cost">120 PLN</p>
             </div>
+        </section>
 
+
+        <section class="visit">
+            <div class="visit__box">
+                <label for="today" class="visit__box--label">Termin:</label>
+                <input type="date" id="today" class="visit__box--input">
+                <label for="hour" class="visit__box--label">Godzina:</label>
+                <input type="time" id="hour" value="12:00" min="9:00" max="18:00" required step="60000"
+                    class="visit__box--input">
+            </div>
 
         </section>
+        <h2 class="price__title section__heading">Tu nas znajdziesz :</h2>
+        <section class="contact">
+            <div class="contact__box">
+                <a href="#"><i class="fab fa-instagram contact__box--social"></i></a>
+                <a href="#"><i class="fab fa-facebook contact__box--social"></i></a>
+            </div>
+            <div class="adress__box">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d815.9461680448907!2d20.595776129190345!3d50.89185495040484!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47182871dde6578b%3A0x8eda677f6fadd1d7!2sSkrajna%2C%2025-671%20Kielce!5e0!3m2!1spl!2spl!4v1644313949974!5m2!1spl!2spl"
+                    width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <i class="fas fa-map-marker-alt adress"></i>
+                <p class="adress">Ul. Skrajna 29</p>
+                <p class="adress">54-720 Kielce</p>
+            </div>
+
+        </section>
+
 
     </main>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
