@@ -179,7 +179,19 @@
                 <label for="today" class="visit__box--label">Termin:</label>
                 <input type="date" id="today" class="visit__box--input" required>
                 <label for="hour" class="visit__box--label">Godzina:</label>
-                <input type="time" id="myTime" min="09:00" step="1800" max="18:00" required class="visit__box--input">
+                <input type="time" id="hour" name="hour" min="09:00" step="1800" max="18:00" required
+                    class="visit__box--input">
+                <label class="visit__box--label" for="pservice">Usługa:</label>
+
+                <select class="visit__box--select" id="pservice">
+                    <option value="">Wybierz usługę:</option>
+                    <option value="dog">Strzyżenie klasyczne</option>
+                    <option value="cat">Skin Fade</option>
+                    <option value="hamster">Odsiwianie</option>
+                    <option value="parrot">Barbering brody</option>
+                    <option value="spider">Combo Barbera</option>
+
+                </select>
                 <button class="visit__box--btn">Zarezerwuj</button>
             </div>
 

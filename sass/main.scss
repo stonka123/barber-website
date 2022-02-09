@@ -295,7 +295,7 @@ body {
 	}
 }
 .visit {
-	height: 50vh;
+	height: 70vh;
 }
 // section visit
 .visit__box {
@@ -303,7 +303,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-around;
-	height: 40vh;
+	height: 60vh;
 	margin: 2em;
 
 	&--label {
@@ -312,9 +312,11 @@ body {
 		margin-top: 1em;
 	}
 	&--input {
+		border-radius: 5px;
+		text-align: center;
 		border: 1px solid $main-color;
 		padding: 1em;
-		font-size: 2rem;
+		font-size: 2.2rem;
 		margin-top: 1em;
 	}
 	&--btn {

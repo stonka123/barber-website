@@ -417,7 +417,7 @@ body {
 }
 
 .visit {
-  height: 50vh;
+  height: 70vh;
 }
 
 .visit__box {
@@ -433,7 +433,7 @@ body {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  height: 40vh;
+  height: 60vh;
   margin: 2em;
 }
 
@@ -444,9 +444,11 @@ body {
 }
 
 .visit__box--input {
+  border-radius: 5px;
+  text-align: center;
   border: 1px solid #aa2e2e;
   padding: 1em;
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin-top: 1em;
 }
 

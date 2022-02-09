@@ -6,6 +6,8 @@ const time = document.getElementById('myTime')
 const footer = document.querySelector('.footer__text--year')
 const main = document.querySelector('.main')
 
+
+
 document.getElementById('today').value = new Date().toISOString().substring(0, 10)
 
 const showNav = () => {
