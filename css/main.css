@@ -444,11 +444,22 @@ body {
 }
 
 .visit__box--input {
+  font-weight: bold;
   border-radius: 5px;
   text-align: center;
   border: 1px solid #aa2e2e;
   padding: 1em;
   font-size: 2.2rem;
+  margin-top: 1em;
+}
+
+.visit__box--select {
+  background: none;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid #aa2e2e;
+  padding: 1em;
+  font-size: 1.8rem;
   margin-top: 1em;
 }
 
