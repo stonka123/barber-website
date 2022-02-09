@@ -23,12 +23,13 @@
     <header class="header">
         <div class="hero-img"></div>
         <div class="hero-shadow"></div>
+        <button class="hamburger hamburger--collapse" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+
         <div class="nav__bar">
-            <button class="hamburger hamburger--collapse" type="button">
-                <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-                </span>
-            </button>
             <img class="nav__bar-logo" src="./img/logo.png" alt="">
         </div>
         </div>
@@ -176,10 +177,10 @@
         <section class="visit">
             <div class="visit__box">
                 <label for="today" class="visit__box--label">Termin:</label>
-                <input type="date" id="today" class="visit__box--input">
+                <input type="date" id="today" class="visit__box--input" required>
                 <label for="hour" class="visit__box--label">Godzina:</label>
-                <input type="time" id="hour" value="12:00" min="9:00" max="18:00" required step="60000"
-                    class="visit__box--input">
+                <input type="time" id="myTime" min="09:00" step="1800" max="18:00" required class="visit__box--input">
+                <button class="visit__box--btn">Zarezerwuj</button>
             </div>
 
         </section>
@@ -199,7 +200,9 @@
             </div>
 
         </section>
-
+        <footer class="footer">
+            <p class="footer__text">Barber &copy; <span class="footer__text--year"></span> </p>
+        </footer>
 
     </main>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
