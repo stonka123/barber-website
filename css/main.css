@@ -776,5 +776,17 @@ main {
   .deskop__logo {
     width: 30px;
   }
+  .aboutus__title {
+    font-size: 4rem;
+  }
+  .aboutus__text {
+    font-size: 2.5rem;
+  }
+  .open__title {
+    font-size: 3rem;
+  }
+  .open__text {
+    font-size: 2rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
