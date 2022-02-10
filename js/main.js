@@ -6,6 +6,7 @@ const navBar = document.querySelector('.nav__bar')
 const time = document.getElementById('myTime')
 const footer = document.querySelector('.footer__text--year')
 const main = document.querySelector('.main')
+const arrowUp = document.querySelector('.arrow-up')
 
 document.getElementById('today').value = new Date().toISOString().substring(0, 10)
 
@@ -30,6 +31,16 @@ const handleObserve = () => {
 		navBar.classList.remove('nav__bar--gray')
 	}
 }
+
+const hangleArrowUp = () => {
+	const currentY = window.scrollY
+	if (main.classList.contains('main') && main.offsetTop <= currentY + 40) {
+		arrowUp.style.display = 'block'
+	} else {
+		arrowUp.style.display = 'none'
+	}
+}
+
 const handleNavItemsAnimation = () => {
 	let delayTime = 0
 	navItem.forEach(item => {
@@ -48,3 +59,4 @@ checkYear()
 
 burgerBtn.addEventListener('click', showNav)
 window.addEventListener('scroll', handleObserve)
+window.addEventListener('scroll', hangleArrowUp)
