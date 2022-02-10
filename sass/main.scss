@@ -1,6 +1,7 @@
 @import './colors';
 @import './_components';
 @import './mixins';
+@import './animations';
 
 *,
 *::before,
@@ -16,6 +17,10 @@ html {
 body {
 	font-size: 1.6rem;
 	font-family: 'Montserrat', sans-serif;
+}
+main {
+	width: 100vw;
+	overflow: hidden;
 }
 // h1 { font-family: 'Cormorant Garamond', serif;}
 .wrapper {
@@ -181,6 +186,17 @@ body {
 		}
 	}
 }
+@keyframes navItemsAnimation {
+	from {
+		transform: translateX(-200%);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+.nav-items-animation {
+	animation: navItemsAnimation 1s both;
+}
 
 //............................ MAIN.................................
 
@@ -304,7 +320,7 @@ body {
 	align-items: center;
 	justify-content: space-around;
 	height: 60vh;
-	margin: 2em;
+	margin: 3em;
 
 	&--label {
 		color: $secondary-color;
@@ -342,6 +358,9 @@ body {
 			transform: scale(1.3);
 		}
 	}
+}
+.section__heading {
+	margin: 1em;
 }
 
 // contact , socials
@@ -387,7 +406,15 @@ body {
 	}
 }
 
-// media quereis
+// animation
+.slide-in-fwd-left {
+	animation: slide-in-fwd-left 0.4s ease-out both;
+}
+.slide-in-fwd-right {
+	animation: slide-in-fwd-right 0.4s ease-out both;
+}
+// media
+
 @media (min-width: 576px) {
 	.container {
 		&__title {

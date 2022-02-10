@@ -15,7 +15,7 @@
     <link href="css/hamburgers.css" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -52,7 +52,7 @@
             </div>
             <img class="deskop__logo" src="./img/logo.png" alt="">
         </nav>
-        <div class="container">
+        <div class="container" data-aos="fade-right">
             <h1 class="container__title">Barber</h1>
             <div class="container__text">Najlepsze cięcie w mieście!</div>
             <a href="#visit" class="container__cpt">
@@ -62,21 +62,21 @@
     </header>
     <main class="main">
         <section class="aboutus__section wrapper">
-            <div class="aboutus">
-                <h2 class="aboutus__title section__heading">O nas</h2>
+            <div class="aboutus" data-aos="fade-right">
+                <h2 class="aboutus__title section__heading" id="aboutus">O nas</h2>
                 <p class="aboutus__text">Barber to całkowicie nowe spojrzenie na barbering. Przekonaj się sam – mamy
                     znakomitą kadrę, kapitalny wystrój, a i miejsce parkingowe przed lokalem się znajdzie.</p>
 
             </div>
-            <h2 class="open">
+            <h2 class="open" data-aos="fade-left">
                 <div class="open__title section__heading">Godziny otwarcia</div>
                 <p class="open__text">Poniedziałek - Piątek: 10:00 - 18:00</p>
                 <p class="open__text">Sobota: 10:00 - 14:00</p>
             </h2>
         </section>
-        <h2 class="price__title section__heading">Cennik</h2>
+        <h2 class="price__title section__heading" id="pricelist">Cennik</h2>
         <section class="price wrapper">
-            <div class="card">
+            <div class="card" data-aos="fade-right">
                 <p class="card__title">Strzyżenie klasyczne</p>
                 <img src="./img/card.jpg" alt="" class="card__img">
                 <div class="card__info__box">
@@ -92,7 +92,7 @@
 
             </div>
 
-            <div class="card">
+            <div class="card"data-aos="fade-left">
                 <p class="card__title">Skin Fade</p>
                 <img src="./img/card.jpg" alt="" class="card__img">
                 <div class="card__info__box">
@@ -111,7 +111,7 @@
                 <p class="card__info__box__cost">80 PLN</p>
             </div>
 
-            <div class="card">
+            <div class="card"data-aos="fade-right">
                 <p class="card__title">Odsiwianie</p>
                 <img src="./img/card.jpg" alt="" class="card__img">
                 <div class="card__info__box">
@@ -132,7 +132,7 @@
                 <p class="card__info__box__cost">100 PLN</p>
             </div>
 
-            <div class="card">
+            <div class="card"data-aos="fade-left">
                 <p class="card__title">Barbering brody</p>
                 <img src="./img/card.jpg" alt="" class="card__img">
                 <div class="card__info__box">
@@ -149,7 +149,7 @@
                 </div>
                 <p class="card__info__box__cost">70 PLN</p>
             </div>
-            <div class="card">
+            <div class="card"data-aos="fade-right">
                 <p class="card__title">Combo Barbera</p>
                 <img src="./img/card.jpg" alt="" class="card__img">
                 <div class="card__info__box">
@@ -175,7 +175,7 @@
 
 
         <section class="visit">
-            <div class="visit__box">
+            <div class="visit__box" id="visit">
                 <label for="today" class="visit__box--label">Termin:</label>
                 <input type="date" id="today" class="visit__box--input" required>
                 <label for="hour" class="visit__box--label">Godzina:</label>
@@ -197,10 +197,12 @@
 
         </section>
         <h2 class="price__title section__heading">Tu nas znajdziesz :</h2>
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="contact__box">
-                <a href="#"><i class="fab fa-instagram contact__box--social"></i></a>
-                <a href="#"><i class="fab fa-facebook contact__box--social"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram contact__box--social"
+                        data-aos="fade-right"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook contact__box--social"
+                        data-aos="fade-left"></i></a>
             </div>
             <div class="adress__box">
                 <iframe
@@ -220,6 +222,10 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="js/slick.js"></script>
     <script src="./js/main.js"></script>
 </body>
