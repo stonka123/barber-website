@@ -140,7 +140,7 @@ main {
   margin-top: 1.5em;
   padding: 0.8em;
   font-size: 2rem;
-  color: #aa2e2e;
+  color: #fff;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -154,7 +154,7 @@ main {
   height: 100%;
   -webkit-transform: scaleY(0);
           transform: scaleY(0);
-  background-color: #fff;
+  background-color: #aa2e2e;
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;

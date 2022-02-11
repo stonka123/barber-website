@@ -99,7 +99,7 @@ main {
 		margin-top: 1.5em;
 		padding: 0.8em;
 		font-size: 2rem;
-		color: $main-color;
+		color: #fff;
 		text-decoration: none;
 		text-transform: uppercase;
 		&::before {
@@ -110,7 +110,7 @@ main {
 			width: 2px;
 			height: 100%;
 			transform: scaleY(0);
-			background-color: $pure-white;
+			background-color: $main-color;
 			transition: transform 0.3s;
 			content: '';
 		}
